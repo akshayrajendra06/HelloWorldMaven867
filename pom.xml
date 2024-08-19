@@ -4,7 +4,7 @@
 
   <groupId>com.test</groupId>
   <artifactId>HelloWorldMaven</artifactId>
-  <version>1.1.1-RELEASE</version>
+  <version>1.1.4-RELEASE</version>
   <packaging>jar</packaging>
 
   <name>HelloWorldMaven</name>
@@ -12,18 +12,16 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   
 <distributionManagement>
-<repository>
-    <id>Internal.repo</id>
-    <!-- CHANGE HERE by your team nexus server -->
-  <name>Internal repo </name>
-    <url>file:///var/lib/jenkins/AkshayRepo/</url>
+  <repository>
+    <id>internal.repo</id>
+    <name>Internal repo</name>
+    <url>file:///var/lib/jenkins/DeepaksLocalRepo/</url>
   </repository>
-
 </distributionManagement>
 
   <dependencies>
